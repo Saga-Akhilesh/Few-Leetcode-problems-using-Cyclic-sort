@@ -17,7 +17,7 @@ class Solution {
             return index;
         }
     }
-    //case 2 which return n
+    //case-2 which returns n
     return arr.length;
     }
     
