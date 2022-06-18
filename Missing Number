@@ -1,0 +1,31 @@
+//Problem: https://leetcode.com/problems/missing-number/
+
+class Solution {
+    public int missingNumber(int[] arr) {
+        int i=0;
+        while(i<arr.length){ 
+            int correctindex=arr[i]; //Here (in question) values are starting from 0 so index=value-1 is not needed.
+            if(arr[i]<arr.length && arr[i]!=arr[correctindex]){  //when element in the array is greater than arr.length which is n then it should skip that element.
+                swap(arr,i,correctindex);
+            }else{
+                i++;
+            }
+        }
+    //After sorting, now search for missing number
+    for(int index=0;index<arr.length;index++){
+        if(arr[index]!=index){
+            return index;
+        }
+    }
+    //case 2 which return n
+    return arr.length;
+    }
+    
+    //swap function
+    public void swap(int arr[],int first,int second){
+        int temp=arr[first];
+        arr[first]=arr[second];
+        arr[second]=temp;
+    }
+}
+    
