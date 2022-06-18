@@ -1,5 +1,5 @@
-Problem: https://leetcode.com/problems/find-the-duplicate-number/submissions/
-This problem can be solved in two ways: (i) Using Cyclesort and (ii) Two-pointer approach
+//Problem: https://leetcode.com/problems/find-the-duplicate-number/submissions/
+//This problem can be solved in two ways: (i) Using Cyclesort and (ii) Two-pointer approach
 
 //Using CycleSort
 class Solution {
